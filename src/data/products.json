@@ -1,0 +1,65 @@
+[
+    {
+      "name": "PlayStation 3",
+      "price": 60000,
+      "pictureURL": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Sony-PlayStation-3-2001A-wController-L.jpg",
+      "stock": 10,
+      "id": 1
+    },
+    {
+      "name": "PlayStation 4",
+      "price": 130000,
+      "pictureURL": "https://cdn.shopify.com/s/files/1/0424/8371/2152/products/prod-1_90b71638-4da6-46bb-863f-455971fd0fe5.png?v=1599631991https://static.wikia.nocookie.net/playstation5617/images/7/74/PlayStation_4.png/revision/latest?cb=20210818011832&path-prefix=es",
+      "stock": 20,
+      "id": 2
+    },
+    {
+      "name": "PlayStation 5",
+      "price": 250000,
+      "pictureURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/PlayStation_5_and_DualSense_with_transparent_background.png/1200px-PlayStation_5_and_DualSense_with_transparent_background.png",
+      "stock": 5,
+      "id": 3
+    },
+    {
+      "name": "Xbox 360",
+      "price": 49000,
+      "pictureURL": "https://upload.wikimedia.org/wikipedia/commons/0/03/Xbox-360-Consoles-Infobox.png",
+      "stock": 8,
+      "id": 4
+    },
+    {
+      "name": "Xbox One",
+      "price": 90000,
+      "pictureURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Microsoft-Xbox-One-Console-wKinect.png/1200px-Microsoft-Xbox-One-Console-wKinect.png",
+      "stock": 9,
+      "id": 5
+    },
+    {
+      "name": "Xbox Series S",
+      "price": 120000,
+      "pictureURL": "https://www.proshop.dk/Images/915x900/2880876_818569f559a7.jpg",
+      "stock": 15,
+      "id": 6
+    },
+    {
+      "name": "Xbox Series X",
+      "price": 220000,
+      "pictureURL": "https://www.atajo.com.ar/images/0000000RRT-0000234357RRT-00002-Consola-Xbox-Series-X-01.jpg",
+      "stock": 30,
+      "id": 7
+    },
+    {
+      "name": "Nintendo Switch",
+      "price": 120000,
+      "pictureURL": "https://www.atajo.com.ar/images/00000HAD-S-KABAA65619HAD-S-KABAA-Consola-Nintendo-Switch-Neon-01.jpg",
+      "stock": 12,
+      "id": 8
+    },
+    {
+      "name": "Nintendo Switch OLED",
+      "price": 190000,
+      "pictureURL": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/XLQWPC4XGVATXLQJTMVMTCAGH4.jpg",
+      "stock": 25,
+      "id": 9
+    }
+  ]

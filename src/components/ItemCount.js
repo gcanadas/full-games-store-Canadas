@@ -28,7 +28,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
         <button onClick={() => {
             if(count <= stock) onAdd(count);
         }} 
-        class="m-4 p-2 bg-transparent font-semibold border-2 border-gray-600 text-gray-800 text-lg rounded-lg transition-colors duration-700 transform hover:bg-gray-300 hover:text-gray-800 focus:border-4 focus:border-gray-400">Agregar al carrito</button>
+        className="m-4 p-2 bg-transparent font-semibold border-2 border-gray-600 text-gray-800 text-lg rounded-lg transition-colors duration-700 transform hover:bg-gray-300 hover:text-gray-800 focus:border-4 focus:border-gray-400">Agregar al carrito</button>
     </div>
   )
 }
