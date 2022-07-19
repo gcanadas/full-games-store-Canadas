@@ -1,10 +1,19 @@
-# Getting Started with Create React App
+# Primera entrega del proyecto final - Curso Reactjs
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Descripción
 
-In the project directory, you can run:
+Este proyecto de trabajo final simula un e-commerce para venta de artículos relacionados a los videojuegos. En el mismo se pueden comprar consolas, juegos, accesorios y gift cards. 
+
+
+Los estilos de la página se realizan utilizando el framework [TailwindCSS](https://tailwindcss.com/).
+
+Tambien se utilizaron las dependencia [Headlessui](https://headlessui.com/) para implementar funciones en el menu de navegación de la página y [React-Router-Dom](https://reactrouter.com/) para implementar el routing y la navegación en la Web.
+
+
+
+
 
 ### `npm start`
 
