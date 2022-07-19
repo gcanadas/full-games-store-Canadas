@@ -1,6 +1,7 @@
 [
     {
       "name": "PlayStation 3",
+      "type": "Consolas",
       "price": 60000,
       "pictureURL": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Sony-PlayStation-3-2001A-wController-L.jpg",
       "stock": 10,
@@ -11,6 +12,7 @@
     },
     {
       "name": "PlayStation 4",
+      "type": "Consolas",
       "price": 130000,
       "pictureURL": "https://th.bing.com/th/id/OIP.HXa-kFjqTztbJMpplOafPwHaHa?pid=ImgDet&rs=1",
       "stock": 20,
@@ -21,6 +23,7 @@
     },
     {
       "name": "PlayStation 5",
+      "type": "Consolas",
       "price": 250000,
       "pictureURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/PlayStation_5_and_DualSense_with_transparent_background.png/1200px-PlayStation_5_and_DualSense_with_transparent_background.png",
       "stock": 5,
@@ -31,6 +34,7 @@
     },
     {
       "name": "Xbox 360",
+      "type": "Consolas",
       "price": 49000,
       "pictureURL": "https://upload.wikimedia.org/wikipedia/commons/0/03/Xbox-360-Consoles-Infobox.png",
       "stock": 8,
@@ -41,6 +45,7 @@
     },
     {
       "name": "Xbox One",
+      "type": "Consolas",
       "price": 90000,
       "pictureURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Microsoft-Xbox-One-Console-wKinect.png/1200px-Microsoft-Xbox-One-Console-wKinect.png",
       "stock": 9,
@@ -51,6 +56,7 @@
     },
     {
       "name": "Xbox Series S",
+      "type": "Consolas",
       "price": 120000,
       "pictureURL": "https://www.proshop.dk/Images/915x900/2880876_818569f559a7.jpg",
       "stock": 15,
@@ -61,6 +67,7 @@
     },
     {
       "name": "Xbox Series X",
+      "type": "Consolas",
       "price": 220000,
       "pictureURL": "https://www.atajo.com.ar/images/0000000RRT-0000234357RRT-00002-Consola-Xbox-Series-X-01.jpg",
       "stock": 30,
@@ -71,6 +78,7 @@
     },
     {
       "name": "Nintendo Switch",
+      "type": "Consolas",
       "price": 120000,
       "pictureURL": "https://www.atajo.com.ar/images/00000HAD-S-KABAA65619HAD-S-KABAA-Consola-Nintendo-Switch-Neon-01.jpg",
       "stock": 12,
@@ -81,6 +89,7 @@
     },
     {
       "name": "Nintendo Switch OLED",
+      "type": "Consolas",
       "price": 190000,
       "pictureURL": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/XLQWPC4XGVATXLQJTMVMTCAGH4.jpg",
       "stock": 25,
@@ -88,5 +97,192 @@
       "description": "El Nintendo Switch OLED es la mejor versión de la consola actual de Nintendo hasta el momento, con una pantalla hermosa y grande para jugar juegos en modo portátil, un gran soporte para jugar en la mesa y una elegante base para conectarse al televisor. Si aún no tienes un Nintendo Switch, este es el que debes comprar.",
       "release": 2021,
       "id": 9
+    },
+    {
+      "name": "The Witcher 3: Wild Hunt",
+      "type": "Juegos",
+      "price": 5000,
+      "pictureURL": "https://newlevel.com.ar/wp-content/uploads/2021/06/The-Witcher-3-Wild-Hunt-600x600.png",
+      "stock": 10,
+      "company": "CD-Projekt",
+      "description": "The Witcher 3: Wild Hunt es un videojuego de rol desarrollado y publicado por la compañía polaca CD Projekt RED. Esta compañía es la desarrolladora mientras que la distribución corre a cargo de la Warner Bros. Interactive, en el caso de Norteamérica y Bandai Namco para Europa.",
+      "release": 2015,
+      "id": 10
+    },
+    {
+      "name": "Cyberpunk 2077",
+      "type": "Juegos",
+      "price": 6000,
+      "pictureURL": "https://i.3djuegos.com/juegos/8873/cyberpunk/fotos/ficha/cyberpunk-4889721.jpg",
+      "stock": 15,
+      "company": "CD-Projekt",
+      "description": "La historia sigue la lucha de V mientras lidia con un misterioso implante cibernético que amenaza con sobrescribir su cuerpo con la personalidad y los recuerdos de una celebridad fallecida que solo V percibe; los dos deben trabajar juntos si hay alguna esperanza de separarlos y salvar la vida de V. El videojuego fue desarrollado por CD Projekt RED, un estudio interno dentro de CD Projekt, usando el motor de videojuegos REDengine 4.",
+      "release": 2020,
+      "id": 11
+    },
+    {
+      "name": "Red dead redemption 2",
+      "type": "Juegos",
+      "price": 7000,
+      "pictureURL": "https://m.media-amazon.com/images/I/81YdZRdE1BL._SX342_.jpg",
+      "stock": 25,
+      "company": "Rockstar Games",
+      "description": "Red Dead Redemption 2, estilizado Red Dead Redemption II, es un videojuego de acción-aventura western basado en el drama, en un mundo abierto y en perspectiva de primera y tercera persona, ​ con componentes para un jugador y multijugador.​ Fue desarrollado por Rockstar Games.",
+      "release": 2018,
+      "id": 12
+    },
+    {
+      "name": "God of War",
+      "type": "Juegos",
+      "price": 7000,
+      "pictureURL": "https://ockam-cloud-thebest.imgix.net/imagenes-s/productos/ps4-god-of-war-8494.jpg?auto=format",
+      "stock": 10,
+      "company": "Santa Monica",
+      "description": "Han pasado años desde que Kratos tomó su venganza contra los Dioses Olímpicos. Habiendo sobrevivido la pelea final contra su padre Zeus, Kratos vive ahora con su joven hijo Atreus en el mundo de los Dioses Nórdicos, una tierra hostil habitada por feroces monstruos y guerreros. Kratos deberá actuar como mentor y protector de su hijo, y tendrá que dominar la ira y enojo que tuvo durante muchos años y atar cabos sueltos.",
+      "release": 2018,
+      "id": 13
+    },
+    {
+      "name": "Horizon Zero Dawn",
+      "type": "Juegos",
+      "price": 6000,
+      "pictureURL": "https://media.vandal.net/m/26118/horizon-zero-dawn-20173114177_1.jpg",
+      "stock": 12,
+      "company": "Guerrilla Games",
+      "description": "Horizon Zero Dawn es un videojuego de rol con elementos de aventura en tercera persona. El juego se ambienta en un mundo post-apocalíptico compuesto por regiones rurales, zonas montañosas, bosques, desiertos y montañas nevadas. Cuenta con un ciclo diurno y nocturno, además de un sistema meteorológico dinámico.",
+      "release": 2017,
+      "id": 14
+    },
+    {
+      "name": "Ghost of Tsushima",
+      "type": "Juegos",
+      "price": 8000,
+      "pictureURL": "https://newlevel.com.ar/wp-content/uploads/2021/08/ghost-of-tsushima-director-cut.png",
+      "stock": 25,
+      "company": "Sucker Punch Productions",
+      "description": "Ambientada en 1274 en la isla epónima de Tsushima, el juego gira en torno al samurái Jin Sakai (Daisuke Tsuji), uno de los pocos supervivientes de la primera invasión mongola a Japón. Jin tendrá que dominar un nuevo estilo de lucha, el camino del Fantasma, para derrotar a las fuerzas mongolas y luchar por la libertad de su pueblo y de la isla. Jin se ve envuelto en un conflicto moral, ya que según el estricto código samurái (Bushido) luchar sigilosamente es deshonroso. Tampoco recibe la aprobación de su tío, el señor de la isla de Tsushima, que es una figura paterna para él.",
+      "release": 2020,
+      "id": 15
+    },
+    {
+      "name": "Ghost of Tsushima",
+      "type": "Accesorios",
+      "price": 8000,
+      "pictureURL": "https://newlevel.com.ar/wp-content/uploads/2021/08/ghost-of-tsushima-director-cut.png",
+      "stock": 25,
+      "company": "Nintendo",
+      "description": "",
+      "release": 2021,
+      "id": 16
+    },
+    {
+      "name": "Ghost of Tsushima",
+      "type": "Accesorios",
+      "price": 8000,
+      "pictureURL": "https://newlevel.com.ar/wp-content/uploads/2021/08/ghost-of-tsushima-director-cut.png",
+      "stock": 25,
+      "company": "Nintendo",
+      "description": "",
+      "release": 2021,
+      "id": 17
+    },
+    {
+      "name": "Ghost of Tsushima",
+      "type": "Accesorios",
+      "price": 8000,
+      "pictureURL": "https://newlevel.com.ar/wp-content/uploads/2021/08/ghost-of-tsushima-director-cut.png",
+      "stock": 25,
+      "company": "Nintendo",
+      "description": "",
+      "release": 2021,
+      "id": 18
+    },
+    {
+      "name": "Ghost of Tsushima",
+      "type": "Accesorios",
+      "price": 8000,
+      "pictureURL": "https://newlevel.com.ar/wp-content/uploads/2021/08/ghost-of-tsushima-director-cut.png",
+      "stock": 25,
+      "company": "Nintendo",
+      "description": "",
+      "release": 2021,
+      "id": 19
+    },
+    {
+      "name": "Ghost of Tsushima",
+      "type": "Accesorios",
+      "price": 8000,
+      "pictureURL": "https://newlevel.com.ar/wp-content/uploads/2021/08/ghost-of-tsushima-director-cut.png",
+      "stock": 25,
+      "company": "Nintendo",
+      "description": "",
+      "release": 2021,
+      "id": 20
+    },
+    {
+      "name": "Ghost of Tsushima",
+      "type": "Accesorios",
+      "price": 8000,
+      "pictureURL": "https://newlevel.com.ar/wp-content/uploads/2021/08/ghost-of-tsushima-director-cut.png",
+      "stock": 25,
+      "company": "Nintendo",
+      "description": "",
+      "release": 2021,
+      "id": 21
+    },
+    {
+      "name": "PSN 20 Dolares",
+      "type": "Gift Cards",
+      "price": 4000,
+      "pictureURL": "https://http2.mlstatic.com/D_NQ_NP_610206-MLA47033515073_082021-W.jpg",
+      "stock": 25,
+      "company": "Sony Interactive Entertainment",
+      "description": "",
+      "release": 2021,
+      "id": 22
+    },
+    {
+      "name": "PSN 50 Dolares",
+      "type": "Gift Cards",
+      "price": 10000,
+      "pictureURL": "https://http2.mlstatic.com/D_NQ_NP_857853-MLA46506681866_062021-O.webp",
+      "stock": 25,
+      "company": "Sony Interactive Entertainment",
+      "description": "",
+      "release": 2021,
+      "id": 23
+    },
+    {
+      "name": "PSN 100 Dolares",
+      "type": "Gift Cards",
+      "price": 20000,
+      "pictureURL": "http://d3ugyf2ht6aenh.cloudfront.net/stores/504/329/products/100usdd1-2ce87a5cb64af4e34016322379563528-640-0.png",
+      "stock": 25,
+      "company": "Sony Interactive Entertainment",
+      "description": "",
+      "release": 2021,
+      "id": 24
+    },
+    {
+      "name": "Xbox 50 Dolares",
+      "type": "Gift Cards",
+      "price": 10000,
+      "pictureURL": "https://cdn.schedaup.com/wp-content/uploads/2020/09/xbox-gift-card-50-usd.jpg",
+      "stock": 25,
+      "company": "Microsoft",
+      "description": "",
+      "release": 2021,
+      "id": 25
+    },
+    {
+      "name": "Xbos 100 Dolares",
+      "type": "Gift Cards",
+      "price": 20000,
+      "pictureURL": "https://cdn.schedaup.com/wp-content/uploads/2020/09/xbox-gift-card-100-usd-600x600.jpg",
+      "stock": 25,
+      "company": "Microsoft",
+      "description": "",
+      "release": 2021,
+      "id": 26
     }
   ]

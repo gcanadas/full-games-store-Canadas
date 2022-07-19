@@ -1,17 +1,33 @@
 import './App.css';
-import NavBar from './components/NavBar';
+import { Routes, Route } from "react-router-dom";
+import Layout from './components/Layout';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
+import CartPage from './pages/CartPage';
+import Products from './pages/Products';
+import DetailPage from './pages/DetailPage';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="category/consoles" element={<Products category={'Consolas'} />} />
+          <Route path="category/games" element={<Products category={'Juegos'} />} />
+          <Route path="category/accessories" element={<Products category={'Accesorios'} />} />
+          <Route path="category/giftcards" element={<Products category={'Gift Cards'} />} />
+          <Route path="product/:id" element={<DetailPage />} />
+          <Route path="cart" element={<CartPage />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+    </Routes>
+      {/* <ItemListContainer title='Bienvenido a Full Games' />
 
-      <ItemListContainer title='Bienvenido a Full Games' />
-
-      <ItemDetailContainer id={5} />
-    </div>
+      <ItemDetailContainer id={5} /> */}
+    </>
   );
 }
 

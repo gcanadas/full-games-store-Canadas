@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink, Link } from "react-router-dom";
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import CartWidget from './CartWidget'
@@ -6,34 +7,30 @@ import CartWidget from './CartWidget'
 const menuItems = [
   { 
     name: 'INICIO', 
-    href: '#', 
-    current: true,
-  },
+    href: '/',  },
   { 
     name: 'CONSOLAS',
-    href: '#', 
-    current: false,
+    href: 'category/consoles',
   },
   { 
     name: 'JUEGOS', 
-    href: '#', 
-    current: false,
+    href: 'category/games',
   },
   { 
     name: 'ACCESORIOS', 
-    href: '#', 
-    current: false,
+    href: 'category/accessories',
   },
   { 
     name: 'GIFT CARDS', 
-    href: '#', 
-    current: false,
+    href: 'category/giftcards',
   },
 ]
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
+let activeClassDesktop = 'bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium';
+let activeClassMobile = 'bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium';
+let inactiveClassDesktop = 'text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium';
+let inactiveClassMobile = 'text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium';
+
 
 const NavBar = () => {
   return (
@@ -55,37 +52,40 @@ const NavBar = () => {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
-                  <img
-                    className="block lg:hidden h-8 w-auto"
-                    src="/logo_mobile.svg"
-                    alt="Full Games"
-                  />
-                  <img
-                    className="hidden lg:block h-8 w-auto"
-                    src="/logo_desktop.svg"
-                    alt="Full Games"
-                  />
+                  <Link to={'/'}>
+                    <img
+                      className="block lg:hidden h-8 w-auto"
+                      src="/logo_mobile.svg"
+                      alt="Full Games"
+                    />
+                  </Link>
+                  <Link to={'/'}>
+                    <img
+                      className="hidden lg:block h-8 w-auto"
+                      src="/logo_desktop.svg"
+                      alt="Full Games"
+                    />
+                  </Link>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {menuItems.map((item) => (
-                      <a
+                      <NavLink to={item.href}
                         key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'px-3 py-2 rounded-md text-sm font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
+                        className={({ isActive }) =>
+                        isActive ? activeClassDesktop : inactiveClassDesktop
+                      }
                       >
                         {item.name}
-                      </a>
+                      </NavLink>
                     ))}                
                   </div>
                 </div>
               </div>
               {/*Agrego icono del carrito*/}
-              <CartWidget />
+              <Link to={'cart'}>
+                <CartWidget />
+              </Link>
             </div>
           </div>
 
@@ -94,15 +94,15 @@ const NavBar = () => {
               {menuItems.map((item) => (
                 <Disclosure.Button
                   key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block px-3 py-2 rounded-md text-base font-medium'
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
+                  className= 'text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium'
                 >
-                  {item.name}
+                  <NavLink to={item.href}
+                    className={({ isActive }) =>
+                      isActive ? activeClassMobile : inactiveClassMobile
+                    }
+                  >
+                    {item.name}
+                  </NavLink>
                 </Disclosure.Button>
               ))}
             </div>

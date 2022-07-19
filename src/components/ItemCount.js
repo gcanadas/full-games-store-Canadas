@@ -12,10 +12,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
   }
 
   return (
-    <div className="m-4">
-        <div className="flex flex-row justify-center items-center custom-number-input h-10">
-        <h3 className="w-full text-gray-800 text-lg font-semibold">Cantidad de items</h3>
-        </div>
+    <div className="m-4 flex flex-col items-center">
         <div className="flex flex-row justify-center items-center h-10 w-full rounded-lg relative bg-transparent mt-1">
             <button onClick={decrease} className=" bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-l cursor-pointer outline-none">
                 <span className="m-auto text-2xl font-semibold">−</span>
@@ -28,7 +25,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
         <button onClick={() => {
             if(count <= stock) onAdd(count);
         }} 
-        className="m-4 p-2 bg-transparent font-semibold border-2 border-gray-600 text-gray-800 text-lg rounded-lg transition-colors duration-700 transform hover:bg-gray-300 hover:text-gray-800 focus:border-4 focus:border-gray-400">Agregar al carrito</button>
+        className="m-4 p-2 bg-transparent font-semibold border-2 border-gray-600 text-gray-800 text-lg rounded-lg transition-colors duration-700 transform hover:bg-gray-300 hover:text-gray-800 focus:border-4 focus:border-gray-400 w-full">Agregar al carrito</button>
     </div>
   )
 }
