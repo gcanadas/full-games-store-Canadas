@@ -38,8 +38,20 @@ const CartProvider = (props) => {
         : false
   )}
 
+  const getCartQuantity = () => {
+    return cart.reduce((total, value) => {
+      return total + value.qty;
+    }, 0);
+  };
+
+  const getTotalPrice = () => {
+    return cart.reduce((total, value) => {
+      return total + value.price * value.qty;
+    }, 0);
+  };
+
   return (
-    <CartContext.Provider value={{ cart, setCart, addItem, removeItem, clearCart, isInCart }}>
+    <CartContext.Provider value={{ cart, setCart, addItem, removeItem, clearCart, isInCart, getCartQuantity, getTotalPrice }}>
         {props.children}
     </CartContext.Provider>
   )

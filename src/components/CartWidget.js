@@ -1,7 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { ShoppingCartIcon } from '@heroicons/react/outline';
+import { CartContext } from '../context/CartContext';
+
 
 const CartWidget = () => {
+  const cartContext = useContext(CartContext);
+  const { getCartQuantity } = cartContext;
     
     return (
         <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -11,6 +15,7 @@ const CartWidget = () => {
         >
           <span className="sr-only">CARRITO</span>
           <ShoppingCartIcon className="h-6 w-6" aria-hidden="true" />
+          <div className=''>{getCartQuantity()}</div>
         </button>
         </div>
     );

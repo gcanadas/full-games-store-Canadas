@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
-import CartPage from './pages/CartPage';
+import Cart from './pages/Cart';
 import Products from './pages/Products';
 import DetailPage from './pages/DetailPage';
 import CartProvider from './context/CartContext';
@@ -19,7 +19,7 @@ function App() {
             <Route path="category/accessories" element={<Products category={'Accesorios'} />} />
             <Route path="category/giftcards" element={<Products category={'Gift Cards'} />} />
             <Route path="product/:id" element={<DetailPage />} />
-            <Route path="cart" element={<CartPage />} />
+            <Route path="cart" element={<Cart />} />
             <Route path="*" element={<NotFound />} />
           </Route>
       </Routes>
