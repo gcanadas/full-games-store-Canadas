@@ -5,16 +5,11 @@ const itemList = ({ items }) => {
   return (
     <div className="">
         <div className="grid flex-wrap items-center justify-center h-full grid-cols-4 gap-y-3 gap-x-3 justify-items-center">
-            {items.map(({name, type, price, pictureURL, stock, id}) => {
+            {items.map((item) => {
                 return(
                 <Item
-                    name={name}
-                    type={type}
-                    price={price}
-                    pictureURL={pictureURL}
-                    stock={stock}
-                    id={id}
-                    key={id} />
+                    item={item}
+                 />
             )})}
         </div>
     </div>
