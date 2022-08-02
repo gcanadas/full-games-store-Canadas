@@ -1,29 +1,39 @@
 import React, {useEffect, useState} from 'react';
-import ItemCount from './ItemCount';
 import ItemList from './ItemList';
-import Products from '../data/products.json';
+//import Products from '../data/products.json';
+import { getProductsByCategory} from '../firebase'
 
 const ItemListContainer = ({category}) => {
 
     const [items, setItems] = useState([]);
 
-    const getProducts = new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(Products.filter((el) => el.type === category));
-        }, 2000);
-    })
+    // const getProducts = new Promise((resolve, reject) => {
+    //     setTimeout(() => {
+    //         resolve(Products.filter((el) => el.type === category));
+    //     }, 2000);
+    // })
 
-    const getFromDB = async () => {
+    // const getFromDB = async () => {
+    //     try {
+    //         const result = await getProducts;
+    //         setItems (result);
+    //     }catch (err) {
+    //         console.log(err);
+    //     }
+    // }
+
+    const getProductsFromDB = async () => {
         try {
-            const result = await getProducts;
-            setItems (result);
-        }catch (err) {
-            console.log(err);
+                const Products = await getProductsByCategory(category, 'products');
+                setItems(Products);
+        } catch (error) {
+            console.error(error);        
         }
     }
 
     useEffect(() => {
-        getFromDB();    
+        //getFromDB();
+        getProductsFromDB();    
     }, [category]);
   
     

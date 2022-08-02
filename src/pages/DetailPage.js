@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import ItemDetailContainer from '../components/ItemDetailContainer';
 
 const DetailPage = () => {
@@ -8,7 +8,7 @@ const DetailPage = () => {
 
   return (
     <div>
-        <ItemDetailContainer id={parseInt(id)} />
+        <ItemDetailContainer id={id} />
     </div>
   )
 }

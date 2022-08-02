@@ -8,6 +8,7 @@ import Products from './pages/Products';
 import DetailPage from './pages/DetailPage';
 import CartProvider from './context/CartContext';
 
+
 function App() {
   return (
     <CartProvider>
