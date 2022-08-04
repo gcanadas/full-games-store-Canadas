@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, getDocs, query, collection, getDoc, where, doc } from "firebase/firestore";
+import { getFirestore, getDocs, query, collection, getDoc, where, doc, addDoc } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBMGVmqfq2w5AruBbYvmVuqG-Ri_ITq5aE",
@@ -40,4 +40,10 @@ export const getProductsById = async (id, nameCollection) => {
       }
       
     return {...docSnap.data(), id: docSnap.id};
+}
+
+export const createItem = async(obj, nameCollection) => {
+  const colRef = collection(db, nameCollection);
+  const data = await addDoc(colRef, obj);
+  return data.id;
 }
