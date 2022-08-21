@@ -1,16 +1,15 @@
-import React from 'react';
+import React from "react";
 import { useParams } from "react-router-dom";
-import ItemDetailContainer from '../components/ItemDetailContainer';
+import ItemDetailContainer from "../components/ItemDetailContainer/ItemDetailContainer";
 
 const DetailPage = () => {
-    
-    let { id } = useParams();
+  let { id } = useParams();
 
   return (
     <div>
-        <ItemDetailContainer id={id} />
+      <ItemDetailContainer id={id} />
     </div>
-  )
-}
+  );
+};
 
-export default DetailPage
+export default DetailPage;

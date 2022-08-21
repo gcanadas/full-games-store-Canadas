@@ -1,36 +1,40 @@
-import React from 'react'
+import React from "react";
 import { NavLink, Link } from "react-router-dom";
-import { Disclosure } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import CartWidget from './CartWidget'
+import { Disclosure } from "@headlessui/react";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import CartWidget from "../CartWidget/CartWidget";
 
 const menuItems = [
-  { 
-    name: 'INICIO', 
-    href: '/',  },
-  { 
-    name: 'CONSOLAS',
-    href: 'category/consoles',
+  {
+    name: "INICIO",
+    href: "/",
   },
-  { 
-    name: 'JUEGOS', 
-    href: 'category/games',
+  {
+    name: "CONSOLAS",
+    href: "category/consoles",
   },
-  { 
-    name: 'ACCESORIOS', 
-    href: 'category/accessories',
+  {
+    name: "JUEGOS",
+    href: "category/games",
   },
-  { 
-    name: 'GIFT CARDS', 
-    href: 'category/giftcards',
+  {
+    name: "ACCESORIOS",
+    href: "category/accessories",
   },
-]
+  {
+    name: "GIFT CARDS",
+    href: "category/giftcards",
+  },
+];
 
-let activeClassDesktop = 'bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium';
-let activeClassMobile = 'bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium';
-let inactiveClassDesktop = 'text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium';
-let inactiveClassMobile = 'text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium';
-
+let activeClassDesktop =
+  "bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium";
+let activeClassMobile =
+  "bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium";
+let inactiveClassDesktop =
+  "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium";
+let inactiveClassMobile =
+  "text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium";
 
 const NavBar = () => {
   return (
@@ -52,14 +56,14 @@ const NavBar = () => {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
-                  <Link to={'/'}>
+                  <Link to={"/"}>
                     <img
                       className="block lg:hidden h-8 w-auto"
                       src="/logo_mobile.svg"
                       alt="Full Games"
                     />
                   </Link>
-                  <Link to={'/'}>
+                  <Link to={"/"}>
                     <img
                       className="hidden lg:block h-8 w-auto"
                       src="/logo_desktop.svg"
@@ -70,20 +74,21 @@ const NavBar = () => {
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {menuItems.map((item) => (
-                      <NavLink to={item.href}
+                      <NavLink
+                        to={item.href}
                         key={item.name}
                         className={({ isActive }) =>
-                        isActive ? activeClassDesktop : inactiveClassDesktop
-                      }
+                          isActive ? activeClassDesktop : inactiveClassDesktop
+                        }
                       >
                         {item.name}
                       </NavLink>
-                    ))}                
+                    ))}
                   </div>
                 </div>
               </div>
               {/*Agrego icono del carrito*/}
-              <Link to={'cart'}>
+              <Link to={"cart"}>
                 <CartWidget />
               </Link>
             </div>
@@ -94,9 +99,10 @@ const NavBar = () => {
               {menuItems.map((item) => (
                 <Disclosure.Button
                   key={item.name}
-                  className= 'text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium'
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  <NavLink to={item.href}
+                  <NavLink
+                    to={item.href}
                     className={({ isActive }) =>
                       isActive ? activeClassMobile : inactiveClassMobile
                     }
@@ -110,6 +116,6 @@ const NavBar = () => {
         </>
       )}
     </Disclosure>
-  )
-}
+  );
+};
 export default NavBar;
