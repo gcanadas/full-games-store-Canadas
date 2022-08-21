@@ -13,7 +13,6 @@ Algunas de las características del sitio son:
 - Posibilidad de filtrar por categorias.
 - Control y actualización de stock de productos.
 - Páginas con detalle e información relevante de cada producto.
-- 
 
 ### Dependencias
 
