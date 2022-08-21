@@ -6,21 +6,6 @@ import { getProductsById } from "../../firebase";
 function ItemDetailContainer({ id }) {
   const [product, setProduct] = useState([]);
 
-  // const getProducts = new Promise((resolve, reject) => {
-  //     setTimeout(() => {
-  //         resolve(Products);
-  //     }, 2000);
-  // })
-
-  // const getProductById = async () => {
-  //     try {
-  //       const result = await getProducts;
-  //       setProduct(result.find((el) => el.id === id));
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   };
-
   const getProductsByIdFromDB = async () => {
     try {
       const Products = await getProductsById(id, "products");
@@ -31,7 +16,6 @@ function ItemDetailContainer({ id }) {
   };
 
   useEffect(() => {
-    //getProductById();
     getProductsByIdFromDB();
   }, []);
 

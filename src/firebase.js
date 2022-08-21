@@ -42,13 +42,6 @@ export const getProductsByCategory = async (category, nameCollection) => {
 export const getProductsById = async (id, nameCollection) => {
   const docRef = doc(db, nameCollection, id);
   const docSnap = await getDoc(docRef);
-  if (docSnap.exists()) {
-    console.log("Document data:", docSnap.data());
-  } else {
-    // doc.data() will be undefined in this case
-    console.log("No such document!");
-  }
-
   return { ...docSnap.data(), id: docSnap.id };
 };
 

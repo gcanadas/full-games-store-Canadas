@@ -35,7 +35,6 @@ const CartForm = () => {
   const updateStock = () => {
     cart.map((item) => {
       let newStock = item.stock - item.qty;
-      console.log(newStock);
       updateItem(item.id, { stock: newStock }, "products");
     });
   };

@@ -1,25 +1,9 @@
 import React, { useEffect, useState } from "react";
 import ItemList from "../ItemList/ItemList";
-//import Products from '../data/products.json';
 import { getProducts, getProductsByCategory } from "../../firebase";
 
 const ItemListContainer = ({ category }) => {
   const [items, setItems] = useState([]);
-
-  // const getProducts = new Promise((resolve, reject) => {
-  //     setTimeout(() => {
-  //         resolve(Products.filter((el) => el.type === category));
-  //     }, 2000);
-  // })
-
-  // const getFromDB = async () => {
-  //     try {
-  //         const result = await getProducts;
-  //         setItems (result);
-  //     }catch (err) {
-  //         console.log(err);
-  //     }
-  // }
 
   const getProductsFromDB = async () => {
     try {
@@ -36,7 +20,6 @@ const ItemListContainer = ({ category }) => {
   };
 
   useEffect(() => {
-    //getFromDB();
     getProductsFromDB();
   }, [category]);
 
